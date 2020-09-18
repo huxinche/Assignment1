@@ -1,5 +1,5 @@
-**Pet:\
-&emsp;Data: species, picture, age, source, requirements.**
+Pet:\
+&emsp;Data: species, picture, age, source, requirements.
 
 Adopter:\
 &emsp;Data: loginCredentials, petsAdopted, reputation\
@@ -18,12 +18,12 @@ Adopter jessi\
 Appointment anappointment\
 Manager tom **
 
-#### Process of Adoption
-###### Manager add a new pet:
+### Process of Adoption
+#### Manager add a new pet:
 tom.login(loginCredentials)\
 cat = tom.addPet(species, age, source, pictures, requirments)
 
-###### Adopter view pets and make an appointment:
+#### Adopter view pets and make an appointment:
 jessi.login(loginCredentials)
 
 cat = jessi.selectPet(jessi.viewPets())\
@@ -31,7 +31,7 @@ jessi check cat by viewing cat.species, cat.picture, cat.age, cat.source and cat
 if jessi is satisfied with cat\
 &emsp;anappointment = jessi.appointAdoption()
 
-###### Manager handle appointment:
+#### Manager handle appointment:
 anappointment = tom.checkAppointment()\
 jessi = anappointment.adopter\
 tom check jessi by checking jessi.reputation and jessi.petsAdopted\
@@ -40,7 +40,7 @@ if tom think jessi is a good candidate \
 else \
 &emsp;tom.rejectAppointment(anappointment)
 
-###### After manager handle the appointment
+#### After manager handle the appointment
 if anappointment is accepted\
 &emsp;if jessi changes her mind\
 &emsp;&emsp;essi.cancelAppointment(anappointment)\
@@ -49,7 +49,7 @@ if anappointment is accepted\
 &emsp;else\
 j&emsp;&emsp;essi go to the adoption center located at anappointment.location
 
-###### At the Adoption center:
+#### At the Adoption center:
 tom.approveAdoption(anappointment)
 
 
