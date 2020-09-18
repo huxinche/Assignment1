@@ -47,7 +47,7 @@ adelivery = jeff.checkDelivery();\
 if jeff think adelivery.commission is fair\
 &emsp;&emsp;jeff.acceptDelivery(adelivery)\
 else\
-&emsp;&emsp;delivery pass to other couriers\
+&emsp;&emsp;delivery pass to other couriers
 
 kfc.login(loginCredentials)\
 anorder = kfc.checkOrder()\
