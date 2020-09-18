@@ -39,7 +39,7 @@ else\
 if jessi changes her mind\
 &emsp;&emsp;if anorder.orderStatus < Cooking\
 &emsp;&emsp;&emsp;&emsp;jessi.cancelOrder(anorder)\
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;jessi.cancelDelivery(adelivery) // commission partly or fully given
+&emsp;&emsp;&emsp;&emsp;jessi.cancelDelivery(adelivery) // commission partly or fully given
 
 
 jeff.login(loginCredentials)\
