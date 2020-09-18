@@ -12,11 +12,11 @@ Manager: \
 &emsp;Data: loginCredentials\
 &emsp;Behavior: addPet, checkAppointment, acceptAppointment, rejectAppointment, approveAdoption.
 
- 
+
 Pet cat\
 Adopter jessi\
 Appointment anappointment\
-Manager tom **
+Manager tom
 
 ### Process of Adoption
 #### Manager add a new pet:
