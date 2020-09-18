@@ -23,7 +23,7 @@ Assignment: assignment1\
 Submission: asubmission\
 Staff: siva
 
-###Process of adding an assignment to course:###
+Process of adding an assignment to course:\
 siva.login(loginCredentials)\
 info5100 = siva.selectCourse(siva.viewCourses())\
 assignment1 = siva.addAssignment(info5100)\
@@ -31,7 +31,7 @@ if siva want to update this assignment\
 &emsp;siva.updateAssignment(assignment1)\
 siva.startSubmitting(assignment1)
 
-###Process of student submitting assignment:###
+Process of student submitting assignment:\
 info5100 = jessi.selectCourse(jessi.viewCourses())\
 assignment1 = jessi.selectAssignment(jessi.viewAssignments(info5100))\
 if submission deadline not reached\
