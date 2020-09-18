@@ -15,8 +15,6 @@ Staff:\
 &emsp;Data: loginCredentials\
 &emsp;Behavior: login, viewCourses, selectCourse, addAssignment, updateAssignment, startSubmitting.
 
-
- 
 Student: jessi\
 Course: info5100\
 Assignment: assignment1\
