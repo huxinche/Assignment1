@@ -15,11 +15,11 @@ Staff:\
 &emsp;Data: loginCredentials\
 &emsp;Behavior: login, viewCourses, selectCourse, addAssignment, updateAssignment, startSubmitting.
 
-Student: jessi\
-Course: info5100\
-Assignment: assignment1\
-Submission: asubmission\
-Staff: siva
+Student jessi\
+Course info5100\
+Assignment assignment1\
+Submission asubmission\
+Staff siva
 
 Process of adding an assignment to course:\
 siva.login(loginCredentials)\
