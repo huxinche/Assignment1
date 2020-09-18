@@ -20,9 +20,9 @@ Ticket aticket\
 
 ### Process of buying a ticket:
 
-jessi.login(loginCredentials)\
+jessi.login(loginCredentials)
 
-flight = jessi.selectFlight(jessi.searchFlight(from, to, noEarlierThan, noLaterThan))\
+flight = jessi.selectFlight(jessi.searchFlight(from, to, noEarlierThan, noLaterThan))
 
 while flight.checkSeats() == false\
 &emsp;&emsp;flight = jessi.selectFlight(jessi.searchFlight(from, to, noEarlierThan, noLaterThan))
