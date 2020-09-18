@@ -17,7 +17,7 @@ Order:\
 Passenger jessi\
 Order anorder\
 Ticket aticket\
-//Flight is determined in runtime.//
+(Flight is determined in runtime.)
 
 ### Process of buying a ticket:
 
