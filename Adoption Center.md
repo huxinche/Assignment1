@@ -2,15 +2,15 @@ Pet:\
 &emsp;Data: species, picture, age, source, requirements.
 
 Adopter:\
-Data: loginCredentials, petsAdopted, reputation\
-Behavior: login, viewPets, selectPet, appointAdoption, cancelAppointment
+&emsp;Data: loginCredentials, petsAdopted, reputation\
+&emsp;Behavior: login, viewPets, selectPet, appointAdoption, cancelAppointment
 
 Appointment:\
-Data: adopter, accepted, startTime, endTime, location, pet.
+&emsp;Data: adopter, accepted, startTime, endTime, location, pet.
 
 Manager: \
-Data: loginCredentials\
-Behavior: addPet, checkAppointment, acceptAppointment, rejectAppointment, approveAdoption.
+&emsp;Data: loginCredentials\
+&emsp;Behavior: addPet, checkAppointment, acceptAppointment, rejectAppointment, approveAdoption.
 
  
 Pet cat\
@@ -29,25 +29,25 @@ jessi.login(loginCredentials)
 cat = jessi.selectPet(jessi.viewPets())\
 jessi check cat by viewing cat.species, cat.picture, cat.age, cat.source and cat.requirments\
 if jessi is satisfied with cat\
-anappointment = jessi.appointAdoption()
+&emsp;anappointment = jessi.appointAdoption()
 
 Manager handle appointment:\
 anappointment = tom.checkAppointment()\
 jessi = anappointment.adopter\
 tom check jessi by checking jessi.reputation and jessi.petsAdopted\
 if tom think jessi is a good candidate \
-tom.acceptAppointment(anappointment)\
+&emsp;tom.acceptAppointment(anappointment)\
 else \
-tom.rejectAppointment(anappointment)
+&emsp;tom.rejectAppointment(anappointment)
 
 After manager handle the appointment\
 if anappointment is accepted\
-if jessi changes her mind\
-jessi.cancelAppointment(anappointment)\
-else if jessi missed appointment time\
-jessi.reputation get worse\
-else\
-jessi go to the adoption center located at anappointment.location
+&emsp;if jessi changes her mind\
+&emsp;&emsp;essi.cancelAppointment(anappointment)\
+&emsp;else if jessi missed appointment time\
+&emsp;&emsp;jessi.reputation get worse\
+&emsp;else\
+j&emsp;&emsp;essi go to the adoption center located at anappointment.location
 
 At the Adoption center:\
 tom.approveAdoption(anappointment)
