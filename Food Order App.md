@@ -19,11 +19,11 @@ Courier:\
 &emsp;Data: loginCredentials\
 &emsp;Behavior: checkDelivery, acceptDelivery
 
-User: jessi\
-Order: anorder\
-Delivery: adelivery\
-Restaurant: kfc\
-Courier: jeff
+User jessi\
+Order anorder\
+Delivery adelivery\
+Restaurant kfc\
+Courier jeff
 
 ### Process of order a meal:
 jessi.login(loginCredentials)\
