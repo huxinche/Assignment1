@@ -1,22 +1,22 @@
 **Pet:\
-&emsp;Data: species, picture, age, source, requirements.
+&emsp;Data: species, picture, age, source, requirements.**
 
-**Adopter:\
+Adopter:\
 &emsp;Data: loginCredentials, petsAdopted, reputation\
 &emsp;Behavior: login, viewPets, selectPet, appointAdoption, cancelAppointment
 
-**Appointment:\
+Appointment:\
 &emsp;Data: adopter, accepted, startTime, endTime, location, pet.
 
-**Manager: \
+Manager: \
 &emsp;Data: loginCredentials\
 &emsp;Behavior: addPet, checkAppointment, acceptAppointment, rejectAppointment, approveAdoption.
 
  
-**Pet cat\
+Pet cat\
 Adopter jessi\
 Appointment anappointment\
-Manager tom
+Manager tom **
 
 #### Process of Adoption
 ###### Manager add a new pet:
