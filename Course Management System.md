@@ -1,19 +1,19 @@
 Student:\
-*   *Data: Email, loginCredentials, major\
-*   *Behavior: login, viewCourses, selectCourse, viewAssignments, selectAssignment, submitAssignment, updateSubmission\
+&emsp;Data: Email, loginCredentials, major\
+Behavior: login, viewCourses, selectCourse, viewAssignments, selectAssignment, submitAssignment, updateSubmission\
 
 Course:\
-*   *Data: assignments
+Data: assignments
 
 Assignment:\
-*   *Data: deadline, submitLimitation
+Data: deadline, submitLimitation
 
 Submission:\
-*   *Data: student, assignment, materials, timeSubmitted
+Data: student, assignment, materials, timeSubmitted
 
 Staff:\
-*   *Data: loginCredentials\
-*   *Behavior: login, viewCourses, selectCourse, addAssignment, updateAssignment, startSubmitting.
+Data: loginCredentials\
+Behavior: login, viewCourses, selectCourse, addAssignment, updateAssignment, startSubmitting.
 
 
  
