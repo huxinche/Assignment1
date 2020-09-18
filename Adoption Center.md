@@ -47,7 +47,7 @@ if anappointment is accepted\
 &emsp;else if jessi missed appointment time\
 &emsp;&emsp;jessi.reputation get worse\
 &emsp;else\
-&emsp;&emsp;jessi go to the adoption center located at anappointment.location
+&emsp;&emsp;&emsp;jessi go to the adoption center located at anappointment.location
 
 #### At the Adoption center:
 tom.approveAdoption(anappointment)
