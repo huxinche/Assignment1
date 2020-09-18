@@ -13,7 +13,6 @@ Order:\
 &emsp;Data: passenger, flight, seat, paymentStatus\
 &emsp;Behavior: confirm, invalid
 
- 
 Passenger jessi\
 Order anorder\
 Ticket aticket\
