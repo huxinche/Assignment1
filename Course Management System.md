@@ -1,19 +1,19 @@
 Student:\
 &emsp;Data: Email, loginCredentials, major\
-Behavior: login, viewCourses, selectCourse, viewAssignments, selectAssignment, submitAssignment, updateSubmission\
+&emsp;Behavior: login, viewCourses, selectCourse, viewAssignments, selectAssignment, submitAssignment, updateSubmission\
 
 Course:\
-Data: assignments
+&emsp;Data: assignments
 
 Assignment:\
-Data: deadline, submitLimitation
+&emsp;Data: deadline, submitLimitation
 
 Submission:\
-Data: student, assignment, materials, timeSubmitted
+&emsp;Data: student, assignment, materials, timeSubmitted
 
 Staff:\
-Data: loginCredentials\
-Behavior: login, viewCourses, selectCourse, addAssignment, updateAssignment, startSubmitting.
+&emsp;Data: loginCredentials\
+&emsp;Behavior: login, viewCourses, selectCourse, addAssignment, updateAssignment, startSubmitting.
 
 
  
@@ -28,25 +28,25 @@ siva.login(loginCredentials)\
 info5100 = siva.selectCourse(siva.viewCourses())\
 assignment1 = siva.addAssignment(info5100)\
 if siva want to update this assignment\
-siva.updateAssignment(assignment1)\
+&emsp;siva.updateAssignment(assignment1)\
 siva.startSubmitting(assignment1)
 
 Process of student submitting assignment:\
 info5100 = jessi.selectCourse(jessi.viewCourses())\
 assignment1 = jessi.selectAssignment(jessi.viewAssignments(info5100))\
 if submission deadline not reached\
-asubmission = jessi.submitAssignment(assignment1, materials)\
-asubmission.timeSubmitted = 1\
+&emsp;asubmission = jessi.submitAssignment(assignment1, materials)\
+&emsp;asubmission.timeSubmitted = 1\
 else\
-jessi can not submit \
+&emsp;jessi can not submit \
 if jessi want to update asubmission\
-if asubmission.deadline not reached\
-if asubmission.timeSubmitted < assignment1.submitLimitation\
-jessi.updateSubmission(asubmission, materials)\
-else\
-jessi can not update\
-else\
-jessi can not update
+&emsp;if asubmission.deadline not reached\
+&emsp;&emsp;if asubmission.timeSubmitted < assignment1.submitLimitation\
+&emsp;&emsp;&emsp;jessi.updateSubmission(asubmission, materials)\
+&emsp;&emsp;else\
+&emsp;&emsp;&emsp;jessi can not update\
+&emsp;else\
+&emsp;&emsp;jessi can not update
     
 
 
