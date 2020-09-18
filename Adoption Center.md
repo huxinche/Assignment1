@@ -29,7 +29,7 @@ jessi.login(loginCredentials)
 cat = jessi.selectPet(jessi.viewPets())\
 jessi check cat by viewing cat.species, cat.picture, cat.age, cat.source and cat.requirments\
 if jessi is satisfied with cat\
-&emsp;anappointment = jessi.appointAdoption()
+&emsp;&emsp;anappointment = jessi.appointAdoption()
 
 #### Manager handle appointment:
 anappointment = tom.checkAppointment()\
