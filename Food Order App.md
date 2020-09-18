@@ -18,7 +18,7 @@ Restaurant:\
 Courier:\
 &emsp;Data: loginCredentials\
 &emsp;Behavior: checkDelivery, acceptDelivery
- 
+
 User: jessi\
 Order: anorder\
 Delivery: adelivery\
