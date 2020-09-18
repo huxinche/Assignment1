@@ -43,7 +43,7 @@ else \
 #### After manager handle the appointment
 if anappointment is accepted\
 &emsp;if jessi changes her mind\
-&emsp;&emsp;essi.cancelAppointment(anappointment)\
+&emsp;&emsp;jessi.cancelAppointment(anappointment)\
 &emsp;else if jessi missed appointment time\
 &emsp;&emsp;jessi.reputation get worse\
 &emsp;else\
