@@ -6,14 +6,14 @@ Course:\
 Data: assignments
 
 Assignment:\
-Data: deadline, submitLimitation\
+Data: deadline, submitLimitation
 
 Submission:\
-Data: student, assignment, materials, timeSubmitted\
+Data: student, assignment, materials, timeSubmitted
 
 Staff:\
 Data: loginCredentials\
-Behavior: login, viewCourses, selectCourse, addAssignment, updateAssignment, startSubmitting.\
+Behavior: login, viewCourses, selectCourse, addAssignment, updateAssignment, startSubmitting.
 
 
  
@@ -21,7 +21,7 @@ Student: jessi\
 Course: info5100\
 Assignment: assignment1\
 Submission: asubmission\
-Staff: siva\
+Staff: siva
 
 Process of adding an assignment to course:\
 siva.login(loginCredentials)\
@@ -29,7 +29,7 @@ info5100 = siva.selectCourse(siva.viewCourses())\
 assignment1 = siva.addAssignment(info5100)\
 if siva want to update this assignment\
 siva.updateAssignment(assignment1)\
-siva.startSubmitting(assignment1)\
+siva.startSubmitting(assignment1)
 
 Process of student submitting assignment:\
 info5100 = jessi.selectCourse(jessi.viewCourses())\
