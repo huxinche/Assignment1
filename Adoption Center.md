@@ -36,18 +36,18 @@ anappointment = tom.checkAppointment()\
 jessi = anappointment.adopter\
 tom check jessi by checking jessi.reputation and jessi.petsAdopted\
 if tom think jessi is a good candidate \
-&emsp;tom.acceptAppointment(anappointment)\
+&emsp;&emsp;tom.acceptAppointment(anappointment)\
 else \
-&emsp;tom.rejectAppointment(anappointment)
+&emsp;&emsp;tom.rejectAppointment(anappointment)
 
 #### After manager handle the appointment
 if anappointment is accepted\
-&emsp;if jessi changes her mind\
-&emsp;&emsp;jessi.cancelAppointment(anappointment)\
-&emsp;else if jessi missed appointment time\
-&emsp;&emsp;jessi.reputation get worse\
-&emsp;else\
-&emsp;&emsp;&emsp;jessi go to the adoption center located at anappointment.location
+&emsp;&emsp;if jessi changes her mind\
+&emsp;&emsp;&emsp;&emsp;jessi.cancelAppointment(anappointment)\
+&emsp;&emsp;else if jessi missed appointment time\
+&emsp;&emsp;&emsp;&emsp;jessi.reputation get worse\
+&emsp;&emsp;else\
+&emsp;&emsp;&emsp;&emsp;jessi go to the adoption center located at anappointment.location
 
 #### At the Adoption center:
 tom.approveAdoption(anappointment)
