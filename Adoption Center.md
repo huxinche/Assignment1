@@ -1,56 +1,55 @@
-Pet:
-Data: species, picture, age, source, requirements.
+Pet:\
+&emsp;Data: species, picture, age, source, requirements.
 
-Adopter:
-Data: loginCredentials, petsAdopted, reputation
+Adopter:\
+Data: loginCredentials, petsAdopted, reputation\
 Behavior: login, viewPets, selectPet, appointAdoption, cancelAppointment
 
-Appointment:
+Appointment:\
 Data: adopter, accepted, startTime, endTime, location, pet.
 
-Manager: 
-Data: loginCredentials
+Manager: \
+Data: loginCredentials\
 Behavior: addPet, checkAppointment, acceptAppointment, rejectAppointment, approveAdoption.
 
  
-Pet: cat
-Adopter: jessi
-Appointment: anappointment
-Manager: tom
+Pet cat\
+Adopter jessi\
+Appointment anappointment\
+Manager tom
 
-Process of Adoption
-
-Manager add a new pet:
-tom.login(loginCredentials)
+Process of Adoption\
+Manager add a new pet:\
+tom.login(loginCredentials)\
 cat = tom.addPet(species, age, source, pictures, requirments)
 
-Adopter view pets and make an appointment:
+Adopter view pets and make an appointment:\
 jessi.login(loginCredentials)
 
-cat = jessi.selectPet(jessi.viewPets())
-jessi check cat by viewing cat.species, cat.picture, cat.age, cat.source and cat.requirments
-if jessi is satisfied with cat
+cat = jessi.selectPet(jessi.viewPets())\
+jessi check cat by viewing cat.species, cat.picture, cat.age, cat.source and cat.requirments\
+if jessi is satisfied with cat\
 anappointment = jessi.appointAdoption()
 
-Manager handle appointment:
-anappointment = tom.checkAppointment()
-jessi = anappointment.adopter
-tom check jessi by checking jessi.reputation and jessi.petsAdopted
-if tom think jessi is a good candidate 
-tom.acceptAppointment(anappointment)
-else 
+Manager handle appointment:\
+anappointment = tom.checkAppointment()\
+jessi = anappointment.adopter\
+tom check jessi by checking jessi.reputation and jessi.petsAdopted\
+if tom think jessi is a good candidate \
+tom.acceptAppointment(anappointment)\
+else \
 tom.rejectAppointment(anappointment)
 
-After manager handle the appointment
-if anappointment is accepted
-if jessi changes her mind
-jessi.cancelAppointment(anappointment)
-else if jessi missed appointment time
-jessi.reputation get worse
-else
-	jessi go to the adoption center located at anappointment.location
+After manager handle the appointment\
+if anappointment is accepted\
+if jessi changes her mind\
+jessi.cancelAppointment(anappointment)\
+else if jessi missed appointment time\
+jessi.reputation get worse\
+else\
+jessi go to the adoption center located at anappointment.location
 
-At the Adoption center:
+At the Adoption center:\
 tom.approveAdoption(anappointment)
 
 
