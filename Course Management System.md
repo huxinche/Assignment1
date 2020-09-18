@@ -3,7 +3,7 @@ Data: Email, loginCredentials, major\
 Behavior: login, viewCourses, selectCourse, viewAssignments, selectAssignment, submitAssignment, updateSubmission\
 
 Course:\
-Data: assignments\
+Data: assignments
 
 Assignment:\
 Data: deadline, submitLimitation\
@@ -46,7 +46,7 @@ jessi.updateSubmission(asubmission, materials)\
 else\
 jessi can not update\
 else\
-jessi can not update\
+jessi can not update
     
 
 
